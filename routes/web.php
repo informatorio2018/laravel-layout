@@ -9,3 +9,6 @@ Route::get('/welcome', function () {
 Route::view('/plantilla','layouts.plantilla');
 
 Route::view('/clientes','clientes');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
